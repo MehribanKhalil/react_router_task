@@ -1,0 +1,43 @@
+.navSection {
+  .nav_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    .nav_left {
+      h3 {
+        color: var(--main-color);
+        font-size: 1.5rem;
+      }
+    }
+    .nav_right {
+      .active {
+        background-color: var(--main-color);
+        color: #fff;
+      }
+      ul {
+        display: flex;
+        
+        .nav_item {
+          padding: 20px 15px;
+          font-size: 0.9rem;
+
+          &:hover {
+            background-color: var(--main-color);
+            color: #fff;
+            transition: all 0.4s ease;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .nav_content {
+      justify-content: center;
+      .nav_right {
+        display: none;
+      }
+    }
+  }
+}
